@@ -1,0 +1,179 @@
+
+/* Basic CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #2D2D2D;
+    background-color: #F6F6F7;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Container */
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    width: 100%;
+}
+
+/* Navbar */
+
+.navbar {
+    background-color: white;
+    padding: 20px;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2D2D2D;
+}
+
+.logo span {
+    color: #F4511E;
+}
+
+/* Navigation */
+
+.nav-links a {
+    margin-left: 20px;
+    color: #2D2D2D;
+}
+
+.nav-links a:hover {
+    color: #F4511E;
+}
+
+
+.btn {
+    display: inline-block;
+    background-color: #F4511E;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #D84315;
+}
+
+
+/* Hero Section */
+
+.hero {
+    background-color: #642A13;
+    color: white;
+    text-align: center;
+    padding: 110px 20px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    margin-bottom: 25px;
+}
+
+/* Main Content */
+
+main {
+    flex: 1;
+}
+
+/* Section */
+
+.section {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.section h2 {
+    margin-bottom: 20px;
+}
+
+/* Food Cards */
+
+.food-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.food-card {
+    background-color: white;
+    width: 250px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.food-card img {
+    width: 100%;
+    height: 160px;
+    display: block;
+}
+
+.food-info {
+    padding: 15px;
+}
+
+.food-info h3 {
+    margin-bottom: 10px;
+}
+
+.price {
+    color: #F4511E;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Why Choose Us */
+
+.why-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.why-item {
+    background-color: white;
+    padding: 25px;
+    width: 300px;
+    border-radius: 8px;
+}
+
+.why-item h3 {
+    margin: 10px 0;
+}
+
+/* Footer */
+
+.footer {
+    background-color: #1E293B;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+}
