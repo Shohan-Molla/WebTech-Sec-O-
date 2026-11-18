@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Registration</title>
+    <link rel="stylesheet" href="customer-register.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Left Side -->
+        <div class="left">
+            <h2>🍴 FoodieRest</h2>
+
+            <h1>Join<br>FoodieRest</h1>
+
+            <p>Create your account to enjoy delicious food</p>
+
+            <ul>
+                <li>🥗 Fresh Ingredients</li>
+                <li>⚡ Fast Service</li>
+                <li>😋 Great Taste</li>
+            </ul>
+        </div>
+
+        <!-- Right Side -->
+        <div class="right">
+
+            <div class="form-box">
+
+                <span class="role">Customer</span>
+
+                <h2>Customer Registration</h2>
+                <p>Fill in the form to create your account</p>
+
+                <form onsubmit="return validateRegister('customer')" novalidate>
+
+                    <fieldset>
+                        <legend>Personal Information</legend>
+
+                        <label>Full Name</label>
+                        <input type="text" id="fullName" name="fullName"
+                               placeholder="Enter your name" required>
+
+                        <div class="form-row">
+                            <div>
+                                <label>Email</label>
+                                <input type="email" id="email" name="email"
+                                       placeholder="Enter your email" required>
+                            </div>
+
+                            <div>
+                                <label>Phone Number</label>
+                                <input type="tel" id="phone" name="phone"
+                                       placeholder="01XXXXXXXXX" required>
+                            </div>
+                        </div>
+
+                        <label>Gender</label>
+
+                        <div class="gender">
+                            <input type="radio" name="gender" value="Male" checked> Male
+                            <input type="radio" name="gender" value="Female"> Female
+                            <input type="radio" name="gender" value="Other"> Other
+                        </div>
+
+                        <label>Address</label>
+                        <textarea id="address" name="address"
+                                  placeholder="House, road, area" required></textarea>
+
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Account Information</legend>
+
+                        <div class="form-row">
+                            <div>
+                                <label>Password</label>
+                                <input type="password" id="password" name="password"
+                                       placeholder="Min 6 characters" required>
+                            </div>
+
+                            <div>
+                                <label>Confirm Password</label>
+                                <input type="password" id="confirmPassword"
+                                       name="confirmPassword"
+                                       placeholder="Type again" required>
+                            </div>
+                        </div>
+
+                        <div class="agree">
+                            <input type="checkbox" id="agree" name="agree" required>
+                            I agree to the terms and conditions
+                        </div>
+
+                    </fieldset>
+
+                    <div class="buttons">
+                        <input type="submit" value="Register" class="register">
+                        <input type="reset" value="Reset" class="reset">
+                    </div>
+
+                </form>
+
+                <p class="login">
+                    Already have an account?
+                    <a href="customer-login.html">Login here</a>
+                </p>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/storage.js"></script>
+    <script src="js/auth.js"></script>
+
+</body>
+</html>
