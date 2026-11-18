@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodieRest | My Cart</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <div class="navbar">
+            <h2>🍴 FoodieRest</h2>
+
+            <nav>
+                <a href="customer-menu.html">Menu</a>
+                <a href="my-orders.html">My Orders</a>
+                <a href="cart.html" class="active">🛒 Cart (1)</a>
+                <a href="profile.html">Hello, R</a>
+                <a href="customer-login.html">Logout</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Cart Section -->
+    <main class="container">
+
+        <h1>Your Cart</h1>
+
+        <div class="cart-layout">
+
+            <!-- Cart Item -->
+            <div class="cart-box">
+
+                <div class="food">
+                    <img src="images/burger.svg" alt="Chicken Burger">
+
+                    <div>
+                        <h3>Chicken Burger</h3>
+                        <p>Tk 250 each</p>
+                    </div>
+
+                    <div class="quantity">
+                        <button type="button">-</button>
+                        <span>1</span>
+                        <button type="button">+</button>
+                    </div>
+
+                    <strong>Tk 250</strong>
+
+                    <button class="remove">Remove</button>
+                </div>
+
+            </div>
+
+            <!-- Order Summary -->
+            <div class="summary">
+
+                <h2>Order Summary</h2>
+
+                <div class="summary-row">
+                    <span>Total Items</span>
+                    <span>1</span>
+                </div>
+
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <span>Tk 250</span>
+                </div>
+
+                <div class="summary-row">
+                    <span>Service Charge</span>
+                    <span>Tk 0</span>
+                </div>
+
+                <div class="summary-row total">
+                    <strong>Total Price</strong>
+                    <strong>Tk 250</strong>
+                </div>
+
+                <label>Note for kitchen (optional)</label>
+
+                <textarea placeholder="e.g. less spicy"></textarea>
+
+                <button class="place-order">Place Order</button>
+
+                <a href="customer-menu.html" class="continue">
+                    Continue Shopping
+                </a>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 FoodieRest Restaurant Management System. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
