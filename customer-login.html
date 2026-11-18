@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Login</title>
+    <link rel="stylesheet" href="customer-login.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Left Side -->
+        <div class="left">
+
+            <h2>🍴 FoodieRest</h2>
+
+            <h1>Welcome Back!</h1>
+
+            <p>Login to continue</p>
+
+            <ul>
+                <li>🥗 Fresh Ingredients</li>
+                <li>⚡ Fast Service</li>
+                <li>😋 Great Taste</li>
+            </ul>
+
+        </div>
+
+        <!-- Right Side -->
+        <div class="right">
+
+            <div class="login-box">
+
+                <span class="role">Customer</span>
+
+                <h2>Customer Login</h2>
+
+                <p>Login to order your favourite food</p>
+
+                <form onsubmit="return validateLogin('customer')" novalidate>
+
+                    <label>Email</label>
+                    <input type="email" id="email" name="email"
+                           placeholder="Enter your email" required>
+
+                    <label>Password</label>
+                    <input type="password" id="password" name="password"
+                           placeholder="Enter your password" required>
+
+                    <div class="remember">
+
+                        <label>
+                            <input type="checkbox" id="remember" name="remember">
+                            Remember me
+                        </label>
+
+                        <a href="forgot-password.html">Forgot password?</a>
+
+                    </div>
+
+                    <input type="submit" value="Login" class="login-btn">
+
+                </form>
+
+                <p class="register">
+                    Don't have an account?
+                    <a href="customer-register.html">Register here</a>
+                </p>
+
+                <div class="demo">
+                    Demo account: rahim@gmail.com / 123456
+                </div>
+
+                <p class="change">
+                    <a href="role.html">Change role</a>
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="js/storage.js"></script>
+    <script src="js/auth.js"></script>
+
+</body>
+</html>

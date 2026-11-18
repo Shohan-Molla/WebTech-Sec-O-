@@ -1,0 +1,178 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Left Side */
+
+.left {
+    width: 52%;
+    background: linear-gradient(#713014, #4b1e0d);
+    color: white;
+    padding: 190px 50px;
+}
+
+.left h2 {
+    margin-bottom: 45px;
+}
+
+.left h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.left p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.left ul {
+    list-style: none;
+}
+
+.left li {
+    margin: 20px 0;
+    font-size: 17px;
+}
+
+/* Right Side */
+
+.right {
+    width: 48%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.login-box {
+    background: white;
+    width: 100%;
+    max-width: 460px;
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px #ddd;
+}
+
+.role {
+    background: #fff0eb;
+    color: orangered;
+    padding: 7px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.login-box h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.login-box p {
+    color: gray;
+    margin-bottom: 25px;
+}
+
+/* Form */
+
+.login-box input[type="email"],
+.login-box input[type="password"] {
+    width: 100%;
+    padding: 13px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.login-box label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.remember {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.remember label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.remember a,
+.register a,
+.change a {
+    color: orangered;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 13px;
+    background: orangered;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.register {
+    text-align: center;
+    margin-top: 22px;
+}
+
+.demo {
+    background: #f8f8f8;
+    border: 1px solid #eee;
+    padding: 12px;
+    text-align: center;
+    color: gray;
+    font-size: 13px;
+    margin-top: 20px;
+    border-radius: 6px;
+}
+
+.change {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+    .container {
+        flex-direction: column;
+    }
+
+    .left, .right {
+        width: 100%;
+    }
+
+    .left {
+        padding: 50px 30px;
+    }
+
+    .right {
+        padding: 20px;
+    }
+}
