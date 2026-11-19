@@ -43,19 +43,19 @@
 
                         <label>Full Name</label>
                         <input type="text" id="fullName" name="fullName"
-                               placeholder="Enter your name" required>
+                               placeholder="Enter your name">
 
                         <div class="form-row">
                             <div>
                                 <label>Email</label>
                                 <input type="email" id="email" name="email"
-                                       placeholder="Enter your email" required>
+                                       placeholder="Enter your email">
                             </div>
 
                             <div>
                                 <label>Phone Number</label>
                                 <input type="tel" id="phone" name="phone"
-                                       placeholder="01XXXXXXXXX" required>
+                                       placeholder="01XXXXXXXXX">
                             </div>
                         </div>
 
@@ -69,7 +69,7 @@
 
                         <label>Address</label>
                         <textarea id="address" name="address"
-                                  placeholder="House, road, area" required></textarea>
+                                  placeholder="House, road, area"></textarea>
 
                     </fieldset>
 
@@ -80,23 +80,26 @@
                             <div>
                                 <label>Password</label>
                                 <input type="password" id="password" name="password"
-                                       placeholder="Min 6 characters" required>
+                                       placeholder="Min 6 characters">
                             </div>
 
                             <div>
                                 <label>Confirm Password</label>
                                 <input type="password" id="confirmPassword"
                                        name="confirmPassword"
-                                       placeholder="Type again" required>
+                                       placeholder="Type again">
                             </div>
                         </div>
 
                         <div class="agree">
-                            <input type="checkbox" id="agree" name="agree" required>
+                            <input type="checkbox" id="agree" name="agree">
                             I agree to the terms and conditions
                         </div>
 
                     </fieldset>
+
+                    <!-- Error and Success Message -->
+                    <div id="formMessage" class="form-message"></div>
 
                     <div class="buttons">
                         <input type="submit" value="Register" class="register">
@@ -115,8 +118,9 @@
 
     </div>
 
-    <script src="js/storage.js"></script>
-    <script src="js/auth.js"></script>
+    <!-- JavaScript -->
+    <script src="customer-storage.js"></script>
+    <script src="customer-auth.js"></script>
 
 </body>
 </html>

@@ -55,7 +55,7 @@ nav .active {
 }
 
 .container h1 {
-    font-size: 26px;
+    font-size: 28px;
     margin-bottom: 8px;
 }
 
@@ -65,7 +65,7 @@ nav .active {
     margin-bottom: 25px;
 }
 
-/* Orders Table */
+/* Table Box */
 
 .table-box {
     background: white;
@@ -82,18 +82,53 @@ table {
 
 th,
 td {
-    padding: 15px;
+    padding: 16px;
     border-bottom: 1px solid #eee;
     font-size: 14px;
 }
 
 th {
-    background: #f8f8f8;
-    color: #555;
+    background: #fafafa;
+    color: #444;
 }
 
 td {
-    color: #444;
+    color: #555;
+}
+
+/* Order Status */
+
+.badge {
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.badge-pending {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.badge-preparing {
+    background: #dbeafe;
+    color: #1d4ed8;
+}
+
+.badge-ready {
+    background: #ede9fe;
+    color: #6d28d9;
+}
+
+.badge-completed {
+    background: #dcfce7;
+    color: #15803d;
+}
+
+.badge-cancelled {
+    background: #fee2e2;
+    color: #b91c1c;
 }
 
 /* Footer */
@@ -102,7 +137,7 @@ footer {
     background: #202b40;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 22px;
     margin-top: 30px;
 }
 
@@ -124,6 +159,6 @@ footer {
     }
 
     table {
-        min-width: 600px;
+        min-width: 650px;
     }
 }

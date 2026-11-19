@@ -204,3 +204,51 @@ footer {
         width: 100%;
     }
 }
+
+/* Category Design */
+
+.category a {
+    display: block;
+    text-decoration: none;
+    color: #777;
+    padding: 12px;
+    margin-bottom: 5px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.category a:hover,
+.category a.active {
+    background-color: orangered;
+    color: white;
+}
+
+
+/* Food Card Button and Price */
+
+.food-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.food-bottom .price {
+    color: orangered;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.food-bottom .btn-primary {
+    background-color: orangered;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.food-bottom .btn-primary:hover {
+    background-color: #d93600;
+}

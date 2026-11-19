@@ -207,3 +207,14 @@ textarea {
         width: 100%;
     }
 }
+
+/* Form Validation Message */
+
+.form-message {
+    display: none;
+    padding: 12px;
+    margin: 15px 0;
+    border-radius: 6px;
+    font-size: 14px;
+    line-height: 1.7;
+}

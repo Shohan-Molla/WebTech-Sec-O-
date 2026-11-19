@@ -17,9 +17,11 @@
             <nav>
                 <a href="customer-menu.html">Menu</a>
                 <a href="my-orders.html">My Orders</a>
-                <a href="cart.html" class="active">🛒 Cart (1)</a>
-                <a href="profile.html">Hello, R</a>
-                <a href="customer-login.html">Logout</a>
+                <a href="cart.html" class="active">
+                    🛒 Cart (<span id="cartCount">0</span>)
+                </a>
+                <a href="profile.html" id="userName">Hello</a>
+                <a href="customer-login.html" onclick="logout()">Logout</a>
             </nav>
         </div>
     </header>
@@ -31,28 +33,9 @@
 
         <div class="cart-layout">
 
-            <!-- Cart Item -->
-            <div class="cart-box">
-
-                <div class="food">
-                    <img src="images/burger.svg" alt="Chicken Burger">
-
-                    <div>
-                        <h3>Chicken Burger</h3>
-                        <p>Tk 250 each</p>
-                    </div>
-
-                    <div class="quantity">
-                        <button type="button">-</button>
-                        <span>1</span>
-                        <button type="button">+</button>
-                    </div>
-
-                    <strong>Tk 250</strong>
-
-                    <button class="remove">Remove</button>
-                </div>
-
+            <!-- Cart Items -->
+            <div class="cart-box" id="cartList">
+                <!-- JavaScript will show cart items here -->
             </div>
 
             <!-- Order Summary -->
@@ -62,12 +45,12 @@
 
                 <div class="summary-row">
                     <span>Total Items</span>
-                    <span>1</span>
+                    <span id="totalItems">0</span>
                 </div>
 
                 <div class="summary-row">
                     <span>Subtotal</span>
-                    <span>Tk 250</span>
+                    <span id="subtotal">Tk 0</span>
                 </div>
 
                 <div class="summary-row">
@@ -77,14 +60,16 @@
 
                 <div class="summary-row total">
                     <strong>Total Price</strong>
-                    <strong>Tk 250</strong>
+                    <strong id="totalPrice">Tk 0</strong>
                 </div>
 
-                <label>Note for kitchen (optional)</label>
+                <label for="note">Note for kitchen (optional)</label>
 
-                <textarea placeholder="e.g. less spicy"></textarea>
+                <textarea id="note" placeholder="e.g. less spicy"></textarea>
 
-                <button class="place-order">Place Order</button>
+                <button class="place-order" onclick="placeOrder()">
+                    Place Order
+                </button>
 
                 <a href="customer-menu.html" class="continue">
                     Continue Shopping
@@ -100,6 +85,15 @@
     <footer>
         <p>© 2026 FoodieRest Restaurant Management System. All rights reserved.</p>
     </footer>
+
+    <!-- JavaScript Files -->
+    <script src="customer-storage.js"></script>
+    <script src="customer-auth.js"></script>
+    <script src="customer.js"></script>
+
+    <script>
+        loadCartPage();
+    </script>
 
 </body>
 </html>
