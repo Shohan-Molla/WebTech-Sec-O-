@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodieRest | My Orders</title>
+    <link rel="stylesheet" href="my-order.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <div class="navbar">
+            <h2>🍴 FoodieRest</h2>
+
+            <nav>
+                <a href="customer-menu.html">Menu</a>
+                <a href="my-order.html" class="active">My Orders</a>
+                <a href="cart.html">🛒 Cart (0)</a>
+                <a href="profile.html">Hello, R</a>
+                <a href="customer-login.html">Logout</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Section -->
+    <main class="container">
+
+        <h1>My Orders</h1>
+
+        <p class="subtitle">
+            Status changes when the kitchen and admin update your order.
+        </p>
+
+        <!-- Orders Table -->
+        <div class="table-box">
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Order ID</th>
+                        <th>Date</th>
+                        <th>Items</th>
+                        <th>Total</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <tbody id="orderRows">
+                    <!-- JavaScript will add order rows here -->
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            © 2026 FoodieRest Restaurant Management System.
+            All rights reserved.
+        </p>
+    </footer>
+
+</body>
+</html>
